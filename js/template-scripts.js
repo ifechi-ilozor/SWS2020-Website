@@ -1,5 +1,5 @@
-jQuery(document).ready(function($) {      
-  // Owl Carousel                     
+jQuery(document).ready(function($) {
+  // Owl Carousel
   var owl = $('.carousel-default');
   owl.owlCarousel({
     nav: true,
@@ -8,10 +8,10 @@ jQuery(document).ready(function($) {
     loop: true,
     navText: ["&#xe605","&#xe606"],
     autoplay: true,
-    autoplayTimeout: 4000
+    autoplayTimeout: 17000
   });
 
-  // Owl Carousel - Content Blocks  
+  // Owl Carousel - Content Blocks
   var owl = $('.carousel-blocks');
   owl.owlCarousel({
     nav: true,
@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
     autoplay: true,
     autoplayTimeout: 5000
   });
-  
+
   // Owl Carousel - Content 3 Blocks
   var owl = $('.carousel-3-blocks');
   owl.owlCarousel({
@@ -55,8 +55,8 @@ jQuery(document).ready(function($) {
     navText: ["&#xe605","&#xe606"],
     autoplay: true,
     autoplayTimeout: 5000
-  });  
-  
+  });
+
   var owl = $('.carousel-fade-transition');
   owl.owlCarousel({
     nav: true,
@@ -67,15 +67,15 @@ jQuery(document).ready(function($) {
     autoplay: true,
     animateOut: 'fadeOut',
     autoplayTimeout: 4000
-  }); 
-  
+  });
+
   // Sticky Nav Bar
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 20){  
+    if ($(this).scrollTop() > 20){
         $('.sticky').addClass("fixed");
     }
     else{
         $('.sticky').removeClass("fixed");
     }
-  });   
+  });
 });
